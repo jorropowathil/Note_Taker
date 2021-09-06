@@ -15,6 +15,7 @@ app.use(express.static('public'));
 
 // More Routes
 app.use("/", htmlRoutes);
+app.use("/api", apiRoutes);
 
 
 // Server start and listen 
