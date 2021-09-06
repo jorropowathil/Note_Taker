@@ -26,7 +26,7 @@ router.post('/notes', (req, res) => {
 })
 
 router.delete('/notes', (req, res) => {
-
+    // const info = fs.writeFile(path.join(__dirname, "../db/db.json"));
 })
 
 
