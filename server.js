@@ -1,6 +1,8 @@
 
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 // Require express
+const express = require('express');
+// Set App to express()
 const app = express();
 
 // Require Routes
@@ -14,5 +16,9 @@ app.use(express.static('public'));
 
 // More Routes
 
+
+
 // Server start and listen 
-app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
+app.listen(PORT, () =>
+  console.log(`Express server listening on port ${PORT}!`)
+);
