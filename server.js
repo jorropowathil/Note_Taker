@@ -1,4 +1,4 @@
-
+// PORT variable 3001 or whichever is available
 const PORT = process.env.PORT || 3001;
 // Require express
 const express = require('express');
@@ -16,7 +16,6 @@ app.use(express.static('public'));
 // More Routes
 app.use("/", htmlRoutes);
 app.use("/api", apiRoutes);
-
 
 // Server start and listen 
 app.listen(PORT, () =>
